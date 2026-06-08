@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ - App Đọc Sách</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BookApp</a>
+        
+        <form class="search-bar" action="index.html">
+            <input type="text" placeholder="Tìm kiếm tên sách, tác giả, thể loại...">
+            <button type="submit">Tìm</button>
+        </form>
+
+        <nav class="nav-links">
+            <a href="index.html" style="color: #3498db; font-weight: bold;">Trang Chủ</a>
+            <a href="library.html">Tủ Sách</a>
+            <a href="login.html" class="btn" style="color: white; margin-left: 15px;">Đăng Nhập</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="category-list">
+            <a href="#" class="cat-tag active">Tất cả</a>
+            <a href="#" class="cat-tag">Sinh học</a>
+            <a href="#" class="cat-tag">Văn học</a>
+            <a href="#" class="cat-tag">Thiên văn học</a>
+            <a href="#" class="cat-tag">Cơ khí</a>
+            <a href="#" class="cat-tag">Lập trình</a>
+            <a href="#" class="cat-tag">Trí tuệ nhân tạo (AI)</a>
+            <a href="#" class="cat-tag">Kinh tế</a>
+        </div>
+
+        <a href="#" class="ad-banner">
+            <span class="ad-label">- Quảng Cáo -</span>
+            <span class="ad-content">Khóa học Lập trình Web Fullstack giảm giá 50% hôm nay!</span>
+        </a>
+
+        <h2 class="section-title">🔥 Sách Đề Cử</h2>
+        <div class="book-grid">
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&q=80" alt="Bìa sách AI" class="book-cover">
+                <h3>Kỷ Nguyên Trí Tuệ Nhân Tạo</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Tech Guru</p>
+                <p style="color: #e67e22; font-size: 13px; margin-top: 5px;">⭐ 4.9/5 - Thể loại: AI</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&q=80" alt="Bìa sách Thiên văn" class="book-cover">
+                <h3>Vũ Trụ Trong Vỏ Hạt Dẻ</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Stephen Hawking</p>
+                <p style="color: #e67e22; font-size: 13px; margin-top: 5px;">⭐ 4.8/5 - Thiên văn học</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&q=80" alt="Bìa sách Lập trình" class="book-cover">
+                <h3>Cấu Trúc Dữ Liệu & Thuật Toán</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Code Master</p>
+                <p style="color: #e67e22; font-size: 13px; margin-top: 5px;">⭐ 4.7/5 - Lập trình</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80" alt="Bìa sách Cơ khí" class="book-cover">
+                <h3>Động Lực Học Cơ Bản</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Kỹ Sư Cơ Khí</p>
+                <p style="color: #e67e22; font-size: 13px; margin-top: 5px;">⭐ 4.6/5 - Cơ khí</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">👁️ Sách Xem Nhiều</h2>
+        <div class="book-grid">
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1456615074700-1dc12aa7364d?w=400&q=80" alt="Bìa sách Văn học" class="book-cover">
+                <h3>Tiếng Gọi Nơi Hoang Dã</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Jack London</p>
+                <p style="color: #3498db; font-size: 13px; margin-top: 5px;">👀 2.1M lượt xem</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=400&q=80" alt="Bìa sách Sinh học" class="book-cover">
+                <h3>Nguồn Gốc Các Loài</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Charles Darwin</p>
+                <p style="color: #3498db; font-size: 13px; margin-top: 5px;">👀 1.8M lượt xem</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&q=80" alt="Bìa sách Frontend" class="book-cover">
+                <h3>Làm Chủ MERN Stack</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Fullstack Dev</p>
+                <p style="color: #3498db; font-size: 13px; margin-top: 5px;">👀 1.5M lượt xem</p>
+            </a>
+        </div>
+
+        <a href="#" class="ad-banner">
+            <span class="ad-label">- Quảng Cáo -</span>
+            <span class="ad-content">Mua laptop đồ họa - Tặng ngay chuột không dây!</span>
+        </a>
+
+        <h2 class="section-title">🆕 Mới Cập Nhật</h2>
+        <div class="book-grid">
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&q=80" alt="Bìa sách HTML/CSS" class="book-cover">
+                <h3>Bí Thuật HTML/CSS</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Frontend Master</p>
+                <p style="color: #2ecc71; font-size: 13px; margin-top: 5px;">⏱️ Cập nhật 5 phút trước</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?w=400&q=80" alt="Bìa sách Vũ trụ" class="book-cover">
+                <h3>Hành Trình Tới Sao Hỏa</h3>
+                <p style="color: #777; font-size: 14px;">Tác giả: Astro Explorer</p>
+                <p style="color: #2ecc71; font-size: 13px; margin-top: 5px;">⏱️ Cập nhật 1 giờ trước</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

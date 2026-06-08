@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Tiết Sách</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BookApp</a>
+        <nav class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="library.html">Tủ Sách</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="book-detail-header">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&q=80" alt="Bìa sách" class="detail-cover">
+            <div class="detail-info">
+                <h1>Cuộc Phiêu Lưu Của JS</h1>
+                <p><strong>Tác giả:</strong> <a href="author.html" style="color: #3498db; font-weight: bold;">Dev Ẩn Danh</a></p>
+                <p><strong>Thể loại:</strong> <a href="category.html" style="color: #3498db; font-weight: bold;">IT, Hài hước</a></p>
+                
+                <div class="stats">
+                    <a href="#review-section" style="cursor:pointer; color:#e67e22;">⭐ Đánh giá: 4.8/5</a>
+                    <span style="margin-left: 15px;">👁 Lượt xem: 1.2M</span>
+                    <span>🔥 Đề cử: 50K</span>
+                </div>
+                
+                <h3>Giới thiệu nội dung:</h3>
+                <p style="margin-top: 10px;">Một câu chuyện ly kỳ về một mảng array bị thất lạc trong bộ nhớ Heap. Hành trình đi tìm Garbage Collector để được giải thoát...</p>
+                
+                <br>
+                <a href="reading.html" class="btn">Bắt Đầu Đọc</a>
+                <button onclick="openModal()" class="btn" style="background-color: #e67e22; margin-left: 10px;">Thêm Vào Tủ Sách</button>
+            </div>
+        </div>
+
+        <a href="#" class="ad-banner">
+            <span class="ad-label">- Quảng Cáo -</span>
+            <span class="ad-content">Đăng ký VPS Server tốc độ cao chỉ từ 99k/tháng</span>
+        </a>
+
+        <div class="chapter-list">
+            <h2>Danh Sách Chương</h2>
+            <ul>
+                <li><a href="reading.html">Chương 1: Array Bị Bỏ Rơi</a> <span style="float: right; color: #999;">12/10/2023</span></li>
+                <li><a href="reading.html">Chương 2: Gặp Gỡ Callback function</a> <span style="float: right; color: #999;">13/10/2023</span></li>
+                <li><a href="reading.html">Chương 3: Lạc Vào Cõi Bất Đồng Bộ (Async)</a> <span style="float: right; color: #999;">14/10/2023</span></li>
+            </ul>
+        </div>
+
+        <a href="#" class="ad-banner">
+            <span class="ad-label">- Quảng Cáo -</span>
+            <span class="ad-content">Săn sale sách ngoại văn trên Tiki hôm nay</span>
+        </a>
+
+        <div class="review-section" id="review-section">
+            <h2>Đánh giá & Bình luận</h2>
+
+            <div class="review-form">
+                <h4 style="margin-bottom: 10px;">Viết cảm nghĩ của bạn</h4>
+                
+                <label for="rating">Chấm điểm:</label>
+                <select id="rating" style="width: auto; margin-left: 10px;">
+                    <option value="5">⭐⭐⭐⭐⭐ Tuyệt vời</option>
+                    <option value="4">⭐⭐⭐⭐ Rất hay</option>
+                    <option value="3">⭐⭐⭐ Tạm được</option>
+                    <option value="2">⭐⭐ Kém</option>
+                    <option value="1">⭐ Rất tệ</option>
+                </select>
+
+                <textarea rows="4" placeholder="Nhập bình luận của bạn về cuốn sách này..."></textarea>
+                
+                <button class="btn" style="background-color: #3498db;">Gửi Bình Luận</button>
+            </div>
+
+            <div class="review-list">
+                <div class="review-item">
+                    <a href="user-profile.html" class="user-avatar" style="text-decoration: none;">H</a>
+                    <div class="review-content">
+                        <h4><a href="user-profile.html">Hoàng Coder</a> <span class="time">2 ngày trước</span></h4>
+                        <div style="color: #f1c40f; font-size: 14px;">⭐⭐⭐⭐⭐</div>
+                        <p>Sách giải thích về bất đồng bộ rất dễ hiểu. Đọc cuốn không dứt ra được, mong tác giả ra thêm chương mới sớm!</p>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <a href="user-profile.html" class="user-avatar" style="background-color: #e74c3c; text-decoration: none;">L</a>
+                    <div class="review-content">
+                        <h4><a href="user-profile.html">Lê Văn A</a> <span class="time">5 ngày trước</span></h4>
+                        <div style="color: #f1c40f; font-size: 14px;">⭐⭐⭐⭐</div>
+                        <p>Đoạn đầu hơi chậm nhưng từ chương 2 trở đi thì diễn biến rất thú vị. Đề cử cho bạn nào mới học JS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="libraryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 style="margin-bottom: 15px; color: #2c3e50;">Lưu sách vào</h3>
+            <ul class="folder-list">
+                <li onclick="closeModal(); alert('Đã thêm vào Đang đọc!')">📖 Đang đọc</li>
+                <li onclick="closeModal(); alert('Đã thêm vào Đọc sau!')">🕒 Đọc sau</li>
+                <li onclick="closeModal(); alert('Đã thêm vào Yêu thích!')">❤️ Yêu thích</li>
+                <li onclick="closeModal(); alert('Đã thêm vào Đã cày xong!')">✅ Đã cày xong</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("libraryModal").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("libraryModal").style.display = "none";
+        }
+        // Bấm ra ngoài popup để đóng
+        window.onclick = function(event) {
+            let modal = document.getElementById("libraryModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

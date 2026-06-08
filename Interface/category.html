@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Mục: Lập Trình</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BookApp</a>
+        <nav class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="library.html">Tủ Sách</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="filter-bar">
+            <h2>🏷️ Thể loại: Lập trình (IT)</h2>
+            <div>
+                <label for="sort">Sắp xếp theo:</label>
+                <select id="sort">
+                    <option value="newest">Mới cập nhật</option>
+                    <option value="views">Lượt xem cao nhất</option>
+                    <option value="rating">Đánh giá tốt nhất</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="book-grid">
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&q=80" alt="Bìa sách" class="book-cover">
+                <h3>Cuộc Phiêu Lưu Của JS</h3>
+                <p style="color: #777; font-size: 14px;">Dev Ẩn Danh</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&q=80" alt="Bìa sách HTML/CSS" class="book-cover">
+                <h3>Bí Thuật HTML/CSS</h3>
+                <p style="color: #777; font-size: 14px;">Frontend Master</p>
+            </a>
+            <a href="book-details.html" class="book-card">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&q=80" alt="Bìa sách Frontend" class="book-cover">
+                <h3>Làm Chủ MERN Stack</h3>
+                <p style="color: #777; font-size: 14px;">Fullstack Dev</p>
+            </a>
+            </div>
+    </div>
+</body>
+</html>
